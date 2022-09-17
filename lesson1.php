@@ -1,10 +1,8 @@
 /* 1 Задание
-
 PS D:\php lessons> php -v
 PHP 7.4.30 (cli) (built: Jun  7 2022 16:24:55) ( ZTS Visual C++ 2017 x64 )
 Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
-
 */
 
 // 2-3 задание
