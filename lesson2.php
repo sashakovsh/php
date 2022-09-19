@@ -23,13 +23,13 @@
     while ($i != $totalGoals) {
         $userGoal = readline("Опишите свою задачу ");
         $goalTime = (int)readline("Сколько минут потребуется на её выполнение? ");
-        $goalsList .= $userGoal . " (" . $goalTime . " мин.)\n ";
+        $goalsList .= $userGoal . " ($goalTime мин.)\n ";
         $totalTime += $goalTime;
         $i++;
     }
     echo "Список дел на сегодня: \n";
     echo $goalsList;
-    echo "Всего на выполнение задач потребуется: " . $totalTime . " мин.";
+    echo "Всего на выполнение задач потребуется: $totalTime мин.";
 
     $userNumber = 0;
 
