@@ -17,8 +17,8 @@
 </form>
 <?php foreach ($tasks as $key => $task): ?>
     <div>
-        <?=$task->getDescription()?>
-        <a href="/?controller=todo&action=done&key=<?=$key?>">[Done]</a><br><br>
+        <?=$task->getDescription() ?>
+        <a href="/?controller=todo&action=done&key=<?=$task->getId()?>">[Done]</a><br><br>
     </div>
 <?php endforeach; ?>
 

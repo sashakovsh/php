@@ -2,6 +2,8 @@
 
 require_once 'model/UserProvider.php';
 session_start();
+$pdo = require 'db.php';
+
 $error = null;
 
 if(isset($_GET['action']) && $_GET['action'] === 'logout') {
@@ -12,9 +14,8 @@ if(isset($_GET['action']) && $_GET['action'] === 'logout') {
 
 if (isset($_POST['username'], $_POST['password'])) {
 ['username' => $username, 'password' => $password] = $_POST;
-    $userProvider = new UserProvider();
+    $userProvider = new UserProvider($pdo);
     $user = $userProvider->getByUserNameAndPassword($username, $password);
-    print_r($user);
 
     if($user === null) {
         $error = 'Введенные данные не верны';
